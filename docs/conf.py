@@ -32,9 +32,9 @@ extensions = [
     'sphinx.ext.autosummary',  # Create neat summary tables for modules/classes/methods etc
     'sphinx.ext.intersphinx',  # Link to other project's documentation (see mapping below)
     'sphinx.ext.viewcode',  # Add a link to the Python source code for classes, functions etc.
-    'sphinx_autodoc_typehints', # Automatically document param types (less noise in class signature)
-    'nbsphinx',  # Integrate Jupyter Notebooks and Sphinx
-    'IPython.sphinxext.ipython_console_highlighting'
+    #'sphinx_autodoc_typehints', # Automatically document param types (less noise in class signature)
+    #'nbsphinx',  # Integrate Jupyter Notebooks and Sphinx
+    #'IPython.sphinxext.ipython_console_highlighting'
 ]
 
 # Mappings for sphinx.ext.intersphinx. Projects have to have Sphinx-generated doc! (.inv file)
@@ -87,12 +87,12 @@ templates_path = ['_templates']
 
 # Readthedocs theme
 # on_rtd is whether on readthedocs.org, this line of code grabbed from docs.readthedocs.org...
-on_rtd = os.environ.get("READTHEDOCS", None) == "True"
-if not on_rtd:  # only import and set the theme if we're building docs locally
-    import sphinx_rtd_theme
-    html_theme = "sphinx_rtd_theme"
-    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-html_css_files = ["readthedocs-custom.css"] # Override some CSS settings
+# on_rtd = os.environ.get("READTHEDOCS", None) == "True"
+# if not on_rtd:  # only import and set the theme if we're building docs locally
+#     import sphinx_rtd_theme
+#     html_theme = "sphinx_rtd_theme"
+#     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+# html_css_files = ["readthedocs-custom.css"] # Override some CSS settings
 
 # Pydata theme
 #html_theme = "pydata_sphinx_theme"
